@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>HTML Forms</h2>
+
+<form action="/action_page.php">
+
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" placeholder = "성을 입력하세요"><br>
+  
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" placeholder = "이름을 입력하세요"><br><br>
+
+  <label for="mypwd">비밀번호:</label><br>
+  <input type="password" id="lname" name="pwd" placeholder = "비밀번호를 입력하세요"><br><br>
+
+  <label for ="age">나이:</label>
+  <input placeholder = "나이를 입력해 주세요." name ="myage" id ="age" type="number"/><br>
+  
+  <input type = "file" accept = image/* /><br><br>
+  <input type = "file" accept = ".png, .jpg, .pdf"/><br><br>
+  <input type = "color" name = "mycolor"/><br>
+  
+  <input type = "radio" name = "country" value = "kr">대한민국
+  <input type = "radio" name = "country" value = "cn">중국
+  <input type = "radio" name = "country" value = "jp">일본
+  <input type = "radio" name = "country" value = "nk">북한
+  <br>
+  
+  <input type ="checkbox" checked/>치킨
+  <input type ="checkbox"/>피자
+  <input type ="checkbox"/>마라탕
+  <input type ="checkbox"/>삼겹살
+  <input type ="checkbox"/>족발
+  <input type ="checkbox"/>피자
+  <input type ="checkbox"/>우동
+  <br>
+  
+  <select name = "grade">
+  	<option value ="1">1학년</option>
+    <option value ="2">2학년</option>
+    <option value ="3">3학년</option>
+    <option value ="4">졸업생</option>
+  </select>
+  <br>
+  
+  <input type ="range" min = "100" max = "500" step = "50"/><br>
+  <br>
+  
+  <input type = "date"/><br>
+  
+  <input type="submit" value="제출하기">
+  
+
+
+</form> 
+
+
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+
+</body>
+</html>
+
