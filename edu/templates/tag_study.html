@@ -13,6 +13,17 @@
    </p>
    <p>JihoPark.github.io</p>
    <div>
+      <a href="{% url 'edu:new_content' %}">새글등록</a>
+      <ul>
+         {% for feed in feed_list %}
+            <li>
+               {{feed.content}}
+               <img src = "/media/{{feed.photo}}" width = "100px"/>
+            </li>
+         {% endfor %}
+      </ul>
+   </div>
+   <div>
          <div>
                <div>
                      <img src ="/static/edu/image/hl 1.jpg" height ="35px"/>

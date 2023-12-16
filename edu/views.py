@@ -15,7 +15,10 @@ class TagStudy(View):
     template_name = 'tag_study.html'
 
     def get(self, request):
-        return render(request, self.template_name)
+        feeds = Feed.objects.all()
+
+        return render(request, self.template_name,
+                    {'feed_list': feeds})
     
 class Newcontent(View):
     templete_name = "upload_form.html"
